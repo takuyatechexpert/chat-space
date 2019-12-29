@@ -56,3 +56,5 @@ gem 'haml-rails'
 #gem導入
 gem 'erb2haml'
 #erbhal変換導入
+
+ gem 'font-awesome-sass'
