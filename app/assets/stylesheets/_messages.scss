@@ -12,6 +12,7 @@ boby{
   position: relative;
 }
 
+.side__chat{
   .header__side{
     background: #253141;
     height: 100px;
@@ -21,9 +22,7 @@ boby{
         background: #253141;
         height: 20px;
         width: 260px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between
+        @include flexcenter(space-between);
       }
         .side__item__name{
           color: #ffffff;
@@ -57,8 +56,7 @@ boby{
           color: #ffffff;
           font-size: 15px;
           font-weight: bold;
-          padding-top: 20px;
-          padding-bottom: 5px;
+          padding: 20px 0 5px;
         }
         .side__group__message{
           color: #ffffff;
@@ -78,34 +76,32 @@ boby{
     background: #ffffff;
     height: 100px;
     width: calc(100% - 300px);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flexcenter(space-between);
 
-      .main__group__left{
+      .header__group__left{
         height: 100px;
 
-        .main__group--text{
+        .left__group--text{
           color: #333333;
           font-size: 20px;
           margin: 35px 40px 15px;
         }
-        .main__group--menber{
+        .left__group--menber{
           color: #999999;
           font-size: 15px;
           margin: 0 40px;
 
         }
       }
-      .main__group__right{
+      .header__group__right{
         padding: 0 20px;
         margin: 28px 20px 28px;
 
-        .main__group--edit{
+        .right__group--edit{
+          height: 40px;
           color: #38aef0;
           border: solid 1px;
           padding: 0 20px;
-          height: 40px;
           line-height: 40px;
         }
       }
@@ -141,9 +137,7 @@ boby{
     background: #d2d2d2;
     height: 90px;
     width: calc(100% - 300px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexcenter();
 
     .from__box{
       position: relative;
@@ -177,11 +171,9 @@ boby{
         height: 50px;
         width: 100px;
         color: #ffffff;
-        margin-left: 15px;
-        margin-right: 40px;
+        margin: 0 40px 0 15px;
         cursor: pointer;
       }
     }
   }
 }
-
