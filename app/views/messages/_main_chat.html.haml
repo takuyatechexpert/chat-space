@@ -1,0 +1,39 @@
+.main
+  .header__main
+    .header__main__left
+      .left__group--text
+        test
+      .left__group--menber
+        Menber : test
+    .header__main__right
+      .right__group--edit
+        Edit
+
+  .main__chat
+    .main__chat__message
+      .chat__user
+        test
+        .chat__date
+          2019/12/27/12:12:12
+      .user__message
+        おはよう
+
+    .main__chat__message
+      .chat__user
+        test2
+        .chat__date
+          2019/12/28/18:18:18
+      .user__message
+        こんばんは
+
+  .from
+    .from__box
+      %input.post__from{name: "text", placeholder: "type a message", type: "textarea", value: ""}/
+      %label{class: "post__image"}
+        %input{type: "file", class: "image__from"}
+        %i.far.fa-image
+        %span<>
+
+    .from__submit
+      %input.submit__btn{name: "commit", type: "submit", value: "send"}/
+     
