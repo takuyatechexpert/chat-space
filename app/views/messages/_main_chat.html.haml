@@ -1,11 +1,11 @@
 .main
   .header__main
-    .header__group__left
+    .header__main__left
       .left__group--text
         test
       .left__group--menber
         Menber : test
-    .header__group__right
+    .header__main__right
       .right__group--edit
         Edit
 
@@ -28,12 +28,12 @@
 
   .from
     .from__box
-      %input.post__from{:name => "text", :placeholder => "type a message", :type => "textarea", :value => ""}/
+      %input.post__from{name: "text", placeholder: "type a message", type: "textarea", value: ""}/
       %label{class: "post__image"}
         %input{type: "file", class: "image__from"}
         %i.far.fa-image
         %span<>
 
-    .post__submit
-      %input.submit__btn{:name => "commit", :type => "submit", :value => "send"}/
+    .from__submit
+      %input.submit__btn{name: "commit", type: "submit", value: "send"}/
      

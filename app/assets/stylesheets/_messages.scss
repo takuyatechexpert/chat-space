@@ -18,7 +18,8 @@ boby{
     height: 100px;
     width: 300px;
     @include flexcenter();
-      .header__side__item{
+    
+      &__item{
         background: #253141;
         height: 20px;
         width: 260px;
@@ -49,7 +50,7 @@ boby{
     height: calc(100vh - 100px);
     width: 300px;
 
-    .main__side__group{
+    &__group{
       width: 260px;
       margin: 0 auto;
         .side__group__name{
@@ -78,7 +79,7 @@ boby{
     width: calc(100% - 300px);
     @include flexcenter(space-between);
 
-      .header__group__left{
+      &__left{
         height: 100px;
 
         .left__group--text{
@@ -93,7 +94,7 @@ boby{
 
         }
       }
-      .header__group__right{
+      &__right{
         padding: 0 20px;
         margin: 28px 20px 28px;
 
@@ -115,7 +116,7 @@ boby{
     top: 100px;
     right: 0; 
   
-    .main__chat__message{
+    &__message{
       margin: 35px 40px 46px;
       .chat__user{
         color: #333333;
@@ -139,7 +140,7 @@ boby{
     width: calc(100% - 300px);
     @include flexcenter();
 
-    .from__box{
+    &__box{
       position: relative;
       width: 100%;
       margin-left: 40px;
@@ -164,7 +165,7 @@ boby{
 
       }
     }
-    .post__submit{
+    &__submit{
 
       .submit__btn{
         background: #38aef0;
