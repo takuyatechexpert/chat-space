@@ -2,12 +2,12 @@
   .header__side
     .header__side__item
       .side__item__name
-        test
+        = current_user.name
       .side__item__icon
-        =link_to  "#",  class:"side__item--edit" do
+        =link_to  "",  class:"side__item--edit" do
           %i.far.fa-edit
           %span<>
-        =link_to  "#",  class:"side__item--gear" do
+        =link_to  edit_user_path(current_user),  class:"side__item--gear" do
           %i.fa.fa-cog
           %span<>
   .main__side
