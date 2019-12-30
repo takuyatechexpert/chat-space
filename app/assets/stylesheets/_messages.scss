@@ -18,7 +18,7 @@ boby{
     height: 100px;
     width: 300px;
     @include flexcenter();
-    
+
       &__item{
         background: #253141;
         height: 20px;
