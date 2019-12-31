@@ -1,0 +1,20 @@
+.side__chat
+  .header__side
+    .header__side__item
+      .side__item__name
+        = current_user.name
+      .side__item__icon
+        =link_to  new_group_path,  class:"side__item--edit" do
+          %i.far.fa-edit
+          %span<>
+        =link_to  edit_user_path(current_user),  class:"side__item--gear" do
+          %i.fa.fa-cog
+          %span<>
+  .main__side
+    - current_user.groups.each do |group|
+      .main__side__group
+        = link_to '#',class: "side__groups"do
+          .side__group__name
+            = group.name
+          .side__group__message
+            まだメッセージがありません
