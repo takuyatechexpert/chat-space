@@ -8,11 +8,8 @@
   justify-content: $type;
 }
 
-boby{
-  position: relative;
-}
-
 .side__chat{
+  float: left;
   .header__side{
     background: #253141;
     height: 100px;
@@ -77,14 +74,11 @@ boby{
   }
 }
 .main{
- 
+  float: right;
+  background: #ffffff;
+  height: 100px;
+  width: calc(100% - 300px);
   .header__main{
-    position: absolute;
-    top: 0;
-    right: 0; 
-    background: #ffffff;
-    height: 100px;
-    width: calc(100% - 300px);
     @include flexcenter(space-between);
 
       &__left{
@@ -99,7 +93,9 @@ boby{
           color: #999999;
           font-size: 15px;
           margin: 0 40px;
-
+          .menber__names{
+            display: flex;
+          }
         }
       }
       &__right{
@@ -107,6 +103,7 @@ boby{
         margin: 28px 20px 28px;
 
         .right__group--edit{
+          display: block;
           height: 40px;
           color: #38aef0;
           border: solid 1px;
@@ -118,14 +115,11 @@ boby{
   
   .main__chat{
     background: #fafafa;
-    height: calc(100% - 190px);
-    width: calc(100% - 300px);
-    position: absolute;
-    top: 100px;
-    right: 0; 
+    height: calc(100vh - 190px);
+    width: calc(100vw - 300px);
   
     &__message{
-      margin: 35px 40px 46px;
+      padding: 35px 40px 46px;
       .chat__user{
         color: #333333;
           .chat__date{
@@ -139,49 +133,48 @@ boby{
       }
     }
   }
-  .from{
-    position: absolute;
-    right: 0;
-    bottom: 0;
+  .form{
     background: #d2d2d2;
     height: 90px;
-    width: calc(100% - 300px);
-    @include flexcenter();
-
+    width: calc(100vw - 300px);
+    
     &__box{
-      position: relative;
       width: 100%;
-      margin-left: 40px;
-
-      .post__from{
-        height: 50px;
+      padding-left: 40px;
+      padding-top: 20px;
+      
+      .input__box{
+        position: relative;
         width: 100%;
-        padding: 0 40px 0 10px;
-        cursor: text;
-      }
+        display: flex;
 
-      .post__image{
-        font-size: 1.4em;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        cursor: pointer;
+        .post__form{
 
-        .image__from{
-          display: none;
+          height: 50px;
+          width: 100%;
+          padding: 0 40px 0 10px;
+          cursor: text;
         }
 
-      }
-    }
-    &__submit{
+        .post__image{
+          font-size: 1.4rem;
+          position: absolute;
+          top: 12px;
+          right: 160px;
+          cursor: pointer;
+          .image__form{
+            display: none;
+          }
+        }
 
-      .submit__btn{
-        background: #38aef0;
-        height: 50px;
-        width: 100px;
-        color: #ffffff;
-        margin: 0 40px 0 15px;
-        cursor: pointer;
+        .submit__btn{
+          background: #38aef0;
+          height: 50px;
+          width: 100px;
+          color: #ffffff;
+          margin: 0 40px 0 15px;
+          cursor: pointer;
+        }
       }
     }
   }
