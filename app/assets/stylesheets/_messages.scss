@@ -117,6 +117,7 @@
     background: #fafafa;
     height: calc(100vh - 190px);
     width: calc(100vw - 300px);
+    overflow: scroll;
   
     &__message{
       padding: 35px 40px 46px;
@@ -149,7 +150,7 @@
         display: flex;
 
         .post__form{
-
+          border: none;
           height: 50px;
           width: 100%;
           padding: 0 40px 0 10px;
