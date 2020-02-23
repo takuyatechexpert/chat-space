@@ -43,4 +43,4 @@
 
 [![Image from Gyazo](https://i.gyazo.com/2429c7c265b9f6623b49343ff605723d.gif)](https://gyazo.com/2429c7c265b9f6623b49343ff605723d)
 
-[![フォロー機能](https://gyazo.com/fc5c1baa4d2e36ac7b27f4207269755e)
+[![Image from Gyazo](https://i.gyazo.com/fc5c1baa4d2e36ac7b27f4207269755e.gif)](https://gyazo.com/fc5c1baa4d2e36ac7b27f4207269755e)
