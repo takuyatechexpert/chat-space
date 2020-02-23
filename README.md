@@ -40,3 +40,5 @@
 - belongs_to :messeage
 - has_many :group_users
 - has_many :users, through: :group_users
+
+[![Image from Gyazo](https://i.gyazo.com/2429c7c265b9f6623b49343ff605723d.gif)](https://gyazo.com/2429c7c265b9f6623b49343ff605723d)
